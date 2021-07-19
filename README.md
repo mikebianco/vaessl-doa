@@ -5,11 +5,11 @@ Official implementation of *Semi-supervised source localization with deep genera
 This deep generative semi-supervised approach performs well relative to fully-supervised and conventional, signal processing-based source localization approaches when large, but sparsely labeled datasets are available. Further, the trained VAE can conditionally generate RTF-phase sequences.
 
 As part of this study, a new room acoustics dataset was collected onbtained in a classroom at the Technical University of Denmark (DTU) (Fernandez-Grande et al. 2021)
-([dataset](https://dx.doi.org/10.21227/c5cn-jv76)). To obtained reverberant speech data, speech segments were obtained from the [Librispeech devlopment corpus](https://www.openslr.org/12) and convolved with recorded room IRs. More details of the process are given in our [paper](https://doi.org/10.1109/ACCESS.2021.3087697).
+([dataset](https://dx.doi.org/10.21227/c5cn-jv76)). This dataset included off-grid and off-range source locations, to test model generalization. To obtain reverberant speech data, speech segments were obtained from the [Librispeech devlopment corpus](https://www.openslr.org/12) and convolved with recorded room IRs. More details of the process are given in our [paper](https://doi.org/10.1109/ACCESS.2021.3087697).
 
 The neural networks and variational inference were implemented with Pytorch and the [Pyro](https://pyro.ai/) probabilistic programming library.
 
-### Insert image of generated RTF
+<img src="static/test.png"/>
 
 ## Requirements
 
