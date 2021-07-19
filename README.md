@@ -9,7 +9,7 @@ As part of this study, a new room acoustics dataset was collected onbtained in a
 
 The neural networks and variational inference were implemented with Pytorch and the [Pyro](https://pyro.ai/) probabilistic programming library.
 
-<img src="static/img1.png" width="100">
+<img src="static/img1.png" width="400">
 
 ## Requirements
 
