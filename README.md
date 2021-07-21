@@ -62,7 +62,7 @@ python conventional_doa.py --algo <the name of the algorithm, 'SRP' or 'MUSIC'>
 ```
 
 ## Visualization
-This repository also includes a Jupyter notebook for visualizing the reconstruction and conditional generation of RTF-phase sequences using VAE-SSL. The notebook contains the code used to generate Figures 4--8 in the [paper](https://doi.org/10.1109/ACCESS.2021.3087697).
+This repository also includes a [Jupyter notebook](https://github.com/mikebianco/vaessl-doa/blob/main/generative_viz.ipynb) for visualizing the reconstruction and conditional generation of RTF-phase sequences using VAE-SSL. The notebook contains the code used to generate Figures 4--8 in the [paper](https://doi.org/10.1109/ACCESS.2021.3087697).
 
 
 ### Attribution
