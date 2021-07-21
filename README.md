@@ -44,10 +44,14 @@ python cnn_train.py --cuda-id <your cuda ID>\
 
 
 ## Evaluation
-To evaluate the trained models. 
+The trained models can be evaluated by
 ```
-python cnn_train.py --cuda-id <your cuda ID>\
-                    --path-save <your path for saving the trained model>
+python vaessel_eval.py --cuda-id <your cuda ID>\
+                       --path-save <path to saved model>
+```
+```
+python cnn_eval.py --cuda-id <your cuda ID>\
+                   --path-save <path to saved model>
 ```
 
 
