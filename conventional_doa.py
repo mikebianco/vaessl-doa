@@ -83,7 +83,7 @@ if __name__ == '__main__':
     parser.add_argument('-ed','--eval-data', default = default_dict['path_data']+default_dict['data_valid'])
     parser.add_argument('-nl','--num-labels',default = 100, type=int)
     parser.add_argument('-nf','--num-frames',default = 31, type=int)
-    parser.add_argument('-algo','--algorithm',default = 'SRP') # alternative MUSIC
+    parser.add_argument('-algo','--algorithm',default = 'SRP') # alternative: MUSIC
 
     args = parser.parse_args()
 
