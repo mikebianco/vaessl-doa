@@ -88,6 +88,6 @@ if __name__ == '__main__':
 
     config = {
         "mic locs": np.array([[0,0],[0,0.085],[0,0]]),
-        "doa grid": np.arange(-90,100,10)*np.pi/180, # putting DOAs on exact grid
+        "doa grid": np.arange(-90,100,10)*np.pi/180,
     }
     main(config,args)
