@@ -20,35 +20,35 @@ conda env create --file requirements.yml
 
 ## Datasets
 
-This distribution is configured to use reverberant speech obtain using [DTU dataset](https://dx.doi.org/10.21227/c5cn-jv76) IRs. The datasets, processed training and validation data, are available for [download here](https://acsweb.ucsd.edu/~mbianco/data/). This raw waveform data, which used for the paper, each contains 2-3 second audio clips of reverberant speech.
-
+This distribution is configured to use reverberant speech obtain using [DTU dataset](https://dx.doi.org/10.21227/c5cn-jv76) IRs. The datasets, processed training and validation data, are available for [download here](https://acsweb.ucsd.edu/~mbianco/data/). Each file contains the raw waveform from twenty 2-3 second audio clips of reverberant speech from each of the DOAs.
 
 ## Training
 
-Two pretrained models are provded in this repository. To train your own VAE-SSL model, using the virtual environent based on the requirements, run
+Three pretrained models for VAE-SSL and fully-supervised CNN are provded in this repository. To train your own VAE-SSL model, using the virtual environent based on the requirements, run
 ```
-python vaessel_train.py --cuda-id <your cude ID>\
-                        --train-data <train data>\
-                        --valid-data <valid data>\
+python vaessel_train.py --cuda-id <your cuda ID>\
                         --path-save <your path for saving the trained model>
 ```
+  
+The default_paths.json file contains paths, datasets, and models for training and evaluation. These can either be changed in the .json file, or at the command line.
 
 While you can technically train VAE-SSL on a CPU (this is set as default), it is prohibitively slow to do so.
 
 Code is also provided for training and evaluating a fully-supervised convolutional neural network (CNN). This CNN is the same architecture used by the VAE-SSL classifier.
 
-Two pretrained CNN models are provided in this repository. To train your own CNN model, run
+To train your own CNN model, run
 ```
-python cnn_train.py --cuda-id <your cude ID>\
-                    --train-data <train data>\
-                    --valid-data <valid data>\
+python cnn_train.py --cuda-id <your cuda ID>\
                     --path-save <your path for saving the trained model>
 ```
 
 
 ## Evaluation
-
-To evaluate the VAE-SSL mode and the
+To evaluate the trained models. 
+```
+python cnn_train.py --cuda-id <your cuda ID>\
+                    --path-save <your path for saving the trained model>
+```
 
 
 ### Attribution
