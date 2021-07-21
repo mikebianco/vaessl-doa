@@ -31,10 +31,9 @@ def main(config,args):
 
     data_obj = data_cls.DataClass(path=PATH,addNoise=True,noiseSeed=0)
 
-    frames1, frames2, labels = data_obj.get_conventional_data(nframes=args.num_frames,nLabels=args.num_labels) #get_train(nframes=config["num frames"],nLabels=0) # setting frames and labels
-
+    frames1, frames2, labels = data_obj.get_conventional_data(nframes=args.num_frames,nLabels=args.num_labels) 
     # instantiating doa algorithms
-    doa = pra.doa.algorithms[args.algorithm](r,data_obj._fs,data_obj._nfft,c=343,num_src=1,azimuth=my_DOAs,mode='near') # using near field
+    doa = pra.doa.algorithms[args.algorithm](r,data_obj._fs,data_obj._nfft,c=343,num_src=1,azimuth=my_DOAs,mode='near') 
 
     X = np.zeros((2,data_obj._nBins,frames1.shape[1])).astype('complex')
 
@@ -50,9 +49,9 @@ def main(config,args):
         X[0,:,:]=frames1[case,:,:].T
         X[1,:,:]=frames2[case,:,:].T
 
-        doa.locate_sources(X,freq_range=[0,data_obj._fs/2]) # TODO: this could be tricky... will need to think about how nbins will fit into this
+        doa.locate_sources(X,freq_range=[0,data_obj._fs/2]) # TODO: include nBins calculation here
 
-        est = doa.azimuth_recon #*180/np.pi #doa.azimuth_recon
+        est = doa.azimuth_recon 
 
         out.append(est)
         target.append(labels[case])
