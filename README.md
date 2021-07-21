@@ -53,6 +53,14 @@ python vaessel_eval.py --cuda-id <your cuda ID>\
 python cnn_eval.py --cuda-id <your cuda ID>\
                    --path-save <path to saved model>
 ```
+Calling the script without any flags will evaluate using the pretrained models and datasets.
+
+## Conventional DOA estimation
+This repository has an implementation of conventional DOA estimation algorithms, which uses the [Pyroomacoustics](https://pyroomacoustics.readthedocs.io/en/pypi-release/index.html) library. In the paper, the ML-based approaches are compared with SRP-PHAT and MUSIC DOA-estimation. To obtain source localization results for these methods, use
+```
+python conventional_doa.py --algo <the name of the algorithm, 'SRP' or 'MUSIC'>
+```
+
 
 
 ### Attribution
