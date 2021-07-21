@@ -1,10 +1,10 @@
 {
   "path_data": "/home/mbianco/__gen_doa/__pyro_vae2/",
   "path_model": "./save_models/",
-  "data_train": "DTU_RIR_06-Sep-2020_speech_big1.mat",
-  "data_valid": "DTU_RIR_06-Sep-2020_speech_big2.mat",
-  "data_off_grid":  "DTU_RIR_19-Oct-2020_speech_off_grid1_21to40.mat",
-  "data_off_range": "DTU_RIR_19-Oct-2020_speech_off_range_21to40.mat",
+  "data_train": "DTU_RIR_speech_train.mat",
+  "data_valid": "DTU_RIR_speech_valid.mat",
+  "data_off_grid":  "DTU_RIR_speech_off_grid.mat",
+  "data_off_range": "DTU_RIR_speech_off_range.mat",
   "cnn_model": "cnn_model_5e-05-1000-256_J1000_Thu_Jul_15_130847_2021.cpkt",
   "vaessl_model": "vaessl_model_5e-05-1000-256_J1000_Mon_Jul_12_080017_2021.cpkt"
 }
