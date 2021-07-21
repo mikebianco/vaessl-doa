@@ -2,7 +2,7 @@
 
 Official implementation of *Semi-supervised source localization with deep generative modeling*, (Bianco et al. 2021) ([paper](https://doi.org/10.1109/ACCESS.2021.3087697)). In this machine learning-based approach to acoustic source localization, a variational autoencoder (VAE) is trained to generate the relative transfer function (RTF) phase for two microphones. The VAE model is trained in parallel with a classifier network, which estimates the direction of arrival for an acoustic source. Both models are trained on both labelled and unlabeled RTF-phase sequences, generated from speech in reverberant environments.
 
-This deep generative semi-supervised approach performs well relative to fully-supervised and conventional, signal processing-based source localization approaches when large, but sparsely labeled datasets are available. Further, the trained VAE can conditionally generate RTF-phase sequences.
+This deep generative semi-supervised approach performs well relative to fully-supervised and conventional, signal processing-based source localization approaches when large, but sparsely labeled, datasets are available. Further, the trained VAE can conditionally generate RTF-phase sequences.
 
 As part of this study, a new room acoustics dataset was collected onbtained in a classroom at the Technical University of Denmark (DTU) (Fernandez-Grande et al. 2021)
 ([dataset](https://dx.doi.org/10.21227/c5cn-jv76)). This dataset included off-grid and off-range source locations, to test model generalization. To obtain reverberant speech data, speech segments were obtained from the [Librispeech devlopment corpus](https://www.openslr.org/12) and convolved with recorded room IRs. More details of the process are given in our [paper](https://doi.org/10.1109/ACCESS.2021.3087697).
@@ -20,7 +20,7 @@ conda env create --file requirements.yml
 
 ## Datasets
 
-This distribution is configured to use reverberant speech obtain using [DTU dataset](https://dx.doi.org/10.21227/c5cn-jv76) IRs. Processed training and validation data are available here. This raw waveform data, which used for the paper, each contains 2-3 second audio clips of reverberant speech.
+This distribution is configured to use reverberant speech obtain using [DTU dataset](https://dx.doi.org/10.21227/c5cn-jv76) IRs. The datasets, processed training and validation data, are available for [download here](https://acsweb.ucsd.edu/~mbianco/data/). This raw waveform data, which used for the paper, each contains 2-3 second audio clips of reverberant speech.
 
 
 ## Training
