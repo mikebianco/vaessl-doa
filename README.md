@@ -26,7 +26,7 @@ This distribution is configured to use reverberant speech obtain using [DTU data
 
 Three pretrained models for VAE-SSL and fully-supervised CNN are provded in this repository. To train your own VAE-SSL model, using the virtual environent based on the requirements, run
 ```
-python vaessel_train.py --cuda-id <your cuda ID>\
+python vaessl_train.py --cuda-id <your cuda ID>\
                         --path-save <your path for saving the trained model>
 ```
   
@@ -46,7 +46,7 @@ python cnn_train.py --cuda-id <your cuda ID>\
 ## Evaluation
 The trained models can be evaluated by
 ```
-python vaessel_eval.py --cuda-id <your cuda ID>\
+python vaessl_eval.py --cuda-id <your cuda ID>\
                        --path-save <path to saved model>
 ```
 ```
