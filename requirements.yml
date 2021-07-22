@@ -5,7 +5,6 @@ channels:
   - defaults
 dependencies:
   - _libgcc_mutex=0.1
-  - _openmp_mutex=4.5
   - anyio=3.2.1
   - argon2-cffi=20.1.0
   - async_generator=1.10
@@ -22,7 +21,6 @@ dependencies:
   - chardet=4.0.0
   - contextvars=2.4
   - cryptography=3.4.7
-  - cudatoolkit=10.2.89
   - cycler=0.10.0
   - dataclasses=0.8
   - decorator=5.0.9
@@ -55,14 +53,10 @@ dependencies:
   - libcblas=3.9.0
   - libdeflate=1.7
   - libffi=3.3
-  - libgcc-ng=9.3.0
-  - libgfortran-ng=9.3.0
   - libgfortran5=9.3.0
-  - libgomp=9.3.0
   - liblapack=3.9.0
   - libpng=1.6.37
   - libsodium=1.0.18
-  - libstdcxx-ng=9.3.0
   - libtiff=4.3.0
   - libwebp-base=1.2.0
   - lz4-c=1.9.3
