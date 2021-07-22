@@ -117,6 +117,13 @@ def train(args,train_obj,valid_obj):
 
     print('Finished Training')
 
+    model_state = arg_dict['model_state_dict']
+    for key,value in model_state.items():
+        model_state[key] = value.cpu()  # pushing to cpu device as default
+
+    arg_dict['model_state_dict']=model_state
+
+
     # saving final model
     arg_dict = torch.load(PATH_temp)
 

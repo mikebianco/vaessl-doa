@@ -148,6 +148,9 @@ def train(args,train_obj,valid_obj):
     # saving final model
     model_state = torch.load(PATH_temp)
 
+    for key,value in model_state.items():
+        model_state[key] = value.cpu()  # pushing to cpu device as default
+
     arg_dict['model_state_dict'] = model_state
     arg_dict['train acc epoch'] = accu_save1  # training history
     arg_dict['valid acc epoch'] = accu_save2
