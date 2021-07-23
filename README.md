@@ -18,6 +18,8 @@ This code was developed in a virtual environment managed by Anaconda. The requir
 conda env create --file requirements.yml
 ```
 
+The default_paths.json file contains paths, datasets, and models for training and evaluation. These can either be changed in the .json file, or at the command line.
+
 ## Datasets
 
 This distribution is configured to use reverberant speech obtain using [DTU dataset](https://dx.doi.org/10.21227/c5cn-jv76) IRs. The datasets, processed training and validation data, are available for [download here](https://acsweb.ucsd.edu/~mbianco/data/). Each file contains the raw waveform from twenty 2-3 second audio clips of reverberant speech from each of the DOAs. Per the default paths, these files should be placed in a folder named 'data' in the main repository directory.
@@ -29,9 +31,6 @@ Three pretrained models for VAE-SSL and fully-supervised CNN are provded in this
 python vaessl_train.py --cuda-id <your cuda ID>\
                         --path-save <your path for saving the trained model>
 ```
-  
-The default_paths.json file contains paths, datasets, and models for training and evaluation. These can either be changed in the .json file, or at the command line.
-
 While you can technically train VAE-SSL on a CPU (this is set as default), it is prohibitively slow to do so.
 
 Code is also provided for training and evaluating a fully-supervised convolutional neural network (CNN). This CNN is the same architecture used by the VAE-SSL classifier.
