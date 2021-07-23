@@ -1,4 +1,4 @@
-# Semi-supervised source localization in reverberant environment with deep generative modeling
+# Semi-supervised source localization in reverberant environments with deep generative modeling
 
 Official implementation of *Semi-supervised source localization with deep generative modeling*, (Bianco et al. 2021) ([paper](https://doi.org/10.1109/ACCESS.2021.3087697)). In this machine learning-based approach to acoustic source localization, a variational autoencoder (VAE) is trained to generate the relative transfer function (RTF) phase for two microphones. The VAE model is trained in parallel with a classifier network, which estimates the direction of arrival for an acoustic source. Both models are trained on both labelled and unlabeled RTF-phase sequences, generated from speech in reverberant environments.
 
