@@ -20,7 +20,7 @@ conda env create --file requirements.yml
 
 ## Datasets
 
-This distribution is configured to use reverberant speech obtain using [DTU dataset](https://dx.doi.org/10.21227/c5cn-jv76) IRs. The datasets, processed training and validation data, are available for [download here](https://acsweb.ucsd.edu/~mbianco/data/). Each file contains the raw waveform from twenty 2-3 second audio clips of reverberant speech from each of the DOAs. Per the default paths, these files can be placed in the 'data' folder.
+This distribution is configured to use reverberant speech obtain using [DTU dataset](https://dx.doi.org/10.21227/c5cn-jv76) IRs. The datasets, processed training and validation data, are available for [download here](https://acsweb.ucsd.edu/~mbianco/data/). Each file contains the raw waveform from twenty 2-3 second audio clips of reverberant speech from each of the DOAs. Per the default paths, these files should be placed in the 'data' folder.
 
 ## Training
 
