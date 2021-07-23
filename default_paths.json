@@ -1,5 +1,5 @@
 {
-  "path_data": "/home/mbianco/__gen_doa/__pyro_vae2/",
+  "path_data": "./data/",
   "path_model": "./save_models/",
   "data_train": "DTU_RIR_speech_train.mat",
   "data_valid": "DTU_RIR_speech_valid.mat",
